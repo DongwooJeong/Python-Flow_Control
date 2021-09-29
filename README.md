@@ -1,34 +1,71 @@
-# python-flow-control
-2강
+python-flow-control
+===
+CH 1. Flow Control Overview & Boolean & Comparison Operator 
+---
+<br>Flow Control : Conditional & Loop
 
-3강
+<br>Boolean: True or False
 
-4강
+<br>Comparison Operators: ==, >, <, >=, <=, !=
 
-5강 
+* '=' is an assignment operator
 
-* 반복문과 리스트는 함께 간다
+***
+Ch 2. Conditional Statement
+---
+1-1. if basics
+* if the statement after if is false, it does not print anything
 
-1. For 문
+1-2. if practice problem
+* Create a variable called input_id, receive input as input, and print a specific phrase if it matches the value stored in the variable called id.
 
-for (value) in [1,2,3]
+2-1. if else
+* If the conditional statement is False, print the value after else:.
 
-print (value) # 1,2,3 순서대로 출력
+2-2. else practice problem
+* If you receive a value other than egoing stored in the id variable as input_id, print Who?
 
-2. Multi-dimensional lists
+3-1. elif
+* If the if statement is false, it goes over to the elif statement.
+* If eliff statement is also false, print the value after else:.
 
-['egoing','basta',blackdew'] # 1차원 리스트
+3-2. elif practice problem
+* Make two id variables, and if the value entered in input_id matches at least one, print Welcome, if it does not match both variables, print Who?
 
-[['egoing','Seoul','Web'],['basta','Seoul','IOT'],['blackdew','Tongyeong','ML']] # 2차원 리스트
+4-0. if in the if
+* Using the if in the if, the id in the first if and the password in the second if must match to print Welcome.
 
-* for 뒤의 value에 바로 이름을 넣어서 코드해석이 좋아짐
+***
+Ch 3. Loop
+--- 
+
+* Loop and lists go together
+
+<br>1. For statement
+
+        for (value) in [1,2,3]
+
+print (value) # print 1,2,3 in order 
+
+<br>2. Multi-dimensional lists
+<br><br>One-dimensional list
+
+    ['egoing','basta',blackdew'] 
+
+ Two-dimensional list
+
+    [['egoing','Seoul','Web'],['basta','Seoul','IOT'],['blackdew','Tongyeong','ML']]
+
+ * putting variable names directly after "for" makes code interpretation better
+
+        for name, address, interest in names:
 
 
-3. dictionary
+<br>3. dictionary
 
-{'name':'egoing', 'address':'Seoul', 'interest':'Web'}
+        {'name':'egoing', 'address':'Seoul', 'interest':'Web'}
 
-key와 value를 매칭시킨 dictionary 형태 (사전형)
+Dictionary that matches key and value
 
-dictionary에서 for key in person: print(key)를 하면 dictionary의 key를, person[key]를 하면 value를 나타냄
+*for key in person: <br>print(key) will print dictionary's key, <br>person[key] will print key's value in the dictionary
 
